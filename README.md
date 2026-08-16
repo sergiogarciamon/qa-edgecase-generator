@@ -1,32 +1,29 @@
-# React + TypeScript + Vite
+# QA Edge-Case & Payload Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An automated test design tool that dynamically parses target web applications and generates domain-tailored QA test scenarios, boundary checks, and security payloads.
 
-Currently, two official plugins are available:
+🚀 **Live Demo:** [https://sergiogarciamon.github.io/QA-Edge-Case-Generator/](https://sergiogarciamon.github.io/QA-Edge-Case-Generator/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Key Features
 
-## React Compiler
+- **Dynamic Domain Parsing**: Automatically extracts domain names, parameters, and targets from input URLs.
+- **Automated Scenario Generation**: Creates structured test cases with target locators, execution steps, payloads, and expected outcomes.
+- **Safety Payload Handling**: Wraps oversized stress payloads gracefully to prevent UI overflow.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the Oxlint configuration
+- **Frontend**: HTML5, Tailwind CSS, JavaScript
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Local Setup
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+```bash
+# Clone the repository
+git clone [https://github.com/sergiogarciamon/QA-Edge-Case-Generator.git](https://github.com/sergiogarciamon/QA-Edge-Case-Generator.git)
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
