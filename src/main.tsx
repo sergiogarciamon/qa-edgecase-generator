@@ -337,7 +337,7 @@ function renderTestCases(scenarios) {
 }
 
 function handleGenerate() {
-  const urlInput = document.getElementById('urlInput');
+  const urlInput = document.getElementById('urlInput') as HTMLInputElement | null;
   if (urlInput && urlInput.value.trim()) {
     renderTestCases(generateScenarios(urlInput.value.trim()));
   }
