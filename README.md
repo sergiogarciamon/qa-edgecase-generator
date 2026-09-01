@@ -2,7 +2,7 @@
 
 An automated test design tool that dynamically parses target web applications and generates domain-tailored QA test scenarios, boundary checks, and security payloads.
 
-🚀 **Live Demo:** [https://sergiogarciamon.github.io/QA-Edge-Case-Generator/](https://sergiogarciamon.github.io/QA-Edge-Case-Generator/)
+🚀 **Live Demo:** [https://sergiogarciamon.github.io/qa-edgecase-generator/](https://sergiogarciamon.github.io/qa-edgecase-generator/)
 
 ## Key Features
 
