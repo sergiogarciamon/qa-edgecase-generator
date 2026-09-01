@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/QA-Edge-Case-Generator/',
+  base: '/qa-edgecase-generator/',
   plugins: [react()],
 })
